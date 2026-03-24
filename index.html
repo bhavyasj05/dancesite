@@ -367,10 +367,22 @@
         nav {
           padding: 0.6rem 1rem;
         }
+        /* scale the hero logo for smaller screens so it's fully visible */
+        .hero-logo-wrap {
+          width: min(60vw, 260px);
+          padding: 10px;
+        }
+        .hero-logo-wrap::before {
+          width: calc(100% + 24px);
+          height: calc(100% + 24px);
+        }
+        .hero-logo-img {
+          width: 78%;
+        }
       }
       .hero-logo-wrap {
-        width: 340px;
-        height: 340px;
+        width: min(80vw, 340px);
+        aspect-ratio: 1/1;
         border-radius: 50%;
         border: 1px solid var(--border);
         display: flex;
@@ -378,21 +390,27 @@
         justify-content: center;
         position: relative;
         box-shadow: 0 6px 30px rgba(26, 23, 20, 0.06);
+        overflow: visible;
+        padding: 12px;
       }
       .hero-logo-wrap::before {
         content: "";
         position: absolute;
-        width: 380px;
-        height: 380px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
         border-radius: 50%;
         border: 1px solid var(--border);
         pointer-events: none;
       }
       .hero-logo-img {
-        width: 280px;
-        height: 280px;
+        width: 80%;
+        height: auto;
         border-radius: 50%;
         object-fit: cover;
+        display: block;
       }
       .hero-since {
         margin-top: 1.5rem;
