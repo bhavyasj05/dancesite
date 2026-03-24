@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1'>
+      <stop offset='0' stop-color='#f8f4ee'/>
+      <stop offset='1' stop-color='#f0e6c8'/>
+    </linearGradient>
+    <style>
+      .title{font-family: 'Cormorant Garamond', serif; font-size:56px; fill:#b8860b}
+      .subtitle{font-family: 'Jost', sans-serif; font-size:20px; fill:#1a1714}
+    </style>
+  </defs>
+  <rect width='1200' height='630' fill='url(#g)' />
+  <text x='72' y='220' class='title'>Gejjenadha Nruthya Mandir</text>
+  <text x='72' y='280' class='subtitle'>Bharatanatyam • Classes • Exams • Performances</text>
+  <rect x='72' y='330' width='420' height='2' fill='#b8860b' />
+  <text x='72' y='380' class='subtitle'>30+ branches · 500+ exam students / year</text>
+</svg>
